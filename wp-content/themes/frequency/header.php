@@ -35,7 +35,24 @@
 
 <!-- JS HERE-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory') ?>/js/respond.min.js"></script>
+<!-- <script src="<?php bloginfo('stylesheet_directory') ?>/js/respond.min.js"></script>  -->
+<!-- FOR SLIDE OUT -->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.show').click(function() {
+        $(this).next('div').toggle("slide");
+    });
+    
+    $('.hide').click(function() {
+        $(this).parent().toggle("slide");
+    });
+});
+
+</script>
+
+<!-- TypeKit -->
+<script src="https://use.typekit.net/alz5ayd.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 <!--END JS-->
 
 <!-- STYLE-->
@@ -51,19 +68,11 @@
     
     
     
-<div class="container row">
-	<header class="banner row ">
-        	
-		
-		
-			<?php wp_nav_menu( $args ); ?>
-		
-		
-	
-    </header>
-    
-<!-- INITIATES HEADESHIVE --><a id="startHeadhesive"></a>   
-    
 
-
-         
+<header>
+		<div class="logo"><img src="<?php bloginfo('stylesheet_directory') ?>/images/FREQUENCY-SERIES-LOGO-01.jpg"/></div>
+		<h1 align="center" class="darkText">Festival of Chicago New Music</br/>
+		<span class="lightText">February 23-28</span></h1>
+		<a href="https://www.ticketfly.com/purchase/event/1035471/tfly" target="_blank"><div class="button">TICKETS</div></a>
+</header>
+    

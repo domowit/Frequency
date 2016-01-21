@@ -9,9 +9,7 @@
 					<?php endwhile; // end of the loop. ?>
 				<?php wp_reset_postdata(); ?>
 		</article>
-		<aside role="complimentary" class="col span_4"> 
-			Sidebar 
-		</aside>
+		
 		
 <h1>SAMPLE TYPOGRAPHY</h1>
 

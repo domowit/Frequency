@@ -1,0 +1,278 @@
+/*
+Theme Name: 	CRAWFORD BLANK THEME
+Theme URI: 		
+Description: CRAWFORD BLANK THEME
+Version: 	1.0
+Author: 	Johnathan Crawford
+Author URI: http://domowit.com
+Tags: 	SIMPLE FRAMEWORK 
+*/
+@import "css/ie.css";
+@import "css/reset.css";
+@import "css/responsive.gs.12col.css";
+
+
+
+/*	EXAMPLE STYLES */
+body {
+	font-family: "nimbus-sans",sans-serif;
+  	font-size: 1em;
+  	line-height: 1.625em;
+  
+  margin: 0 auto;
+}
+.light {background-color:#539194}
+.dark {background-color:#1B2939}
+.lightText {color:#539194}
+.darkText {color:#1B2939}
+
+
+header {
+ margin:75px 0 100px 0;
+ text-align: center;
+}
+.logo {
+	margin-bottom:75px
+ 
+}
+
+article {
+	
+}
+
+
+
+footer {
+	
+}
+
+/*	Typography VIA http://www.gridlover.net/app/  (MAJOR SIXTH) */
+
+h1 {
+  font-family: "abril-fatface",serif;
+  font-size: 3.2em;
+  line-height: 1.3em;
+   margin-top: 0.59090909em;
+  margin-bottom: 0.59090909em;
+  
+}
+
+h2 {
+	font-family: "abril-fatface",serif;
+  font-size: 2.75em;
+  line-height: 1.181818182em;
+  margin-top: 1.18181818em;
+  margin-bottom: 0.59090909em;
+ 
+}
+h3 {
+	font-family: "abril-fatface",serif;
+  font-size: 1.6875em;
+  line-height: 1.925925926em;
+  margin-top: 0.96296296em;
+  margin-bottom: 0.96296296em;
+  font-weight:bold
+}
+h4 {
+  font-size: 1em;
+  line-height: 1.625em;
+  margin-top: 1.625em;
+  margin-bottom: 1.625em;
+ 
+}
+<!-- ol, pre, table, blockquote {
+  margin-top: 1.625em;
+  margin-bottom: 1.625em;
+}-->
+
+.button {
+	background-color:#1B2939;
+	transition: background-color 0.5s ease;
+	padding:5px 40px;
+	color:#fff;
+	display:inline-block;
+	margin-top:50px
+
+
+
+}
+.button:hover {
+	background-color:#539194;
+	
+	
+
+}
+
+/* Sanitation */
+
+ul, li {
+margin:0 !important;
+padding:0 !important;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
+
+.clear {
+	clear: both;
+}
+.container {
+	width: 100%;
+	height: 450px;
+}
+
+.left {
+	
+	height: 100%;
+	width: 50%;
+	float: left;
+	position:relative;
+	z-index:-300;
+}
+li:nth-child(odd) .left {
+	background-color:#539194
+}
+li:nth-child(even) .left {
+	background-color:#1B2939
+}
+
+.right {
+	height: 100%;
+	width: 50%;
+	float: left;
+	background-color:#ccc;
+	position:relative;
+	z-index:-300;
+}
+.slidingContainer {
+	    position: absolute;
+    z-index: 3000;
+    /* display: none; */
+    /* float: left; */
+    top: 0px;
+    width: 100%;
+} 
+.slidingDiv {
+	min-height: 450px !important;
+	height: 40vh !important;
+	width: 100%;
+	opacity: 1 !important;
+	background-color: #888;
+	display: none;
+	position: absolute;
+	    top: 0;
+}
+.text {
+	height: 450px;
+}
+.artistContainer {
+	z-index: 200;
+	width: 100%;
+
+	position: relative;
+	
+		
+}
+
+.artistContainer .information{
+
+/*border:2px solid #fff;*/
+width:100%;
+padding:50px;
+position:absolute;
+z-index:150;
+}
+.artistBG {
+	z-index: 100;
+	width: 100%;
+	min-height: 450px;
+	height: 40vh;
+	float: left;
+}
+.text {
+	width: 300px;
+	float: left;
+}
+.show {
+	top:350px;
+	position: relative;
+	padding:0 50px;
+}
+/*MENU*/
+.navigation-strip {
+	width: 175px;
+	position: fixed;
+	z-index: 400;
+}
+.main-nav {
+	width: 175px;
+	text-align: center;
+	margin-top: -500px;
+	-webkit-transition : 0.3s linear;
+	-moz-transition : 0.3s linear;
+	height: 0px;
+}
+main {
+	margin-top: 60px;
+	padding-top: 100px;
+}
+.container {
+	width: 175px;
+	margin: 0 auto;
+	max-width: 600px;
+	text-align: left;
+}
+input {
+	display: none;
+}
+label {
+	width: 175px;
+	padding : 18px 0;
+	text-align : right;
+	cursor : pointer;
+	padding-right: 1em;
+	float: right;
+	position: fixed;
+	height: 60px;
+	top: 0;
+	opacity: .7;
+	-webkit-transition: opacity .5s;
+}
+label:hover {
+	color : #222;
+	opacity: 1;
+	-webkit-transition: opacity .5s;
+}
+.navigation-strip a {
+	display : block;
+	padding : 25px;
+	color : #454545;
+	text-decoration: none;
+	-webkit-transition : color .1s;
+	-moz-transition : color .1s;
+	background-color: #ddd;
+	border-bottom: 1px solid #ccc;
+}
+.navigation-strip a:hover {
+	background-color: #ccc;
+}
+#toggle:checked ~ nav {
+	/*height:  400px;*/
+	margin-top: 80px;
+	-webkit-transition : 0.3s linear;
+	-moz-transition : 0.3s linear;
+}
+#toggle:checked ~ label {
+	background-color: #ddd;
+}
+
+
+
