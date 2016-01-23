@@ -25,7 +25,10 @@
 <title>
 <?php wp_title( '|', true, 'right' ); ?>
 </title>
-<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory') ?>/images/favicon.ico">
+<!--
+ADD FAVICON
+
+ <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory') ?>/images/favicon.ico">-->
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
@@ -54,9 +57,10 @@ $(document).ready(function() {
 <script src="https://use.typekit.net/alz5ayd.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <!--END JS-->
-
 <!-- STYLE-->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 <!-- END STYLE-->
 <?php wp_head(); ?>
 </head>
@@ -73,6 +77,6 @@ $(document).ready(function() {
 		<div class="logo"><img src="<?php bloginfo('stylesheet_directory') ?>/images/FREQUENCY-SERIES-LOGO-01.jpg"/></div>
 		<h1 align="center" class="darkText">Festival of Chicago New Music</br/>
 		<span class="lightText">February 23-28</span></h1>
-		<a href="https://www.ticketfly.com/purchase/event/1035471/tfly" target="_blank"><div class="button">TICKETS</div></a>
+		<a href="https://www.ticketfly.com/purchase/event/1035471/tfly" target="_blank"><div class="button">All Access Ticktes</div></a>
 </header>
     

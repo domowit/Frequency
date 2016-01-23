@@ -15,7 +15,7 @@ Tags: 	SIMPLE FRAMEWORK
 
 /*	EXAMPLE STYLES */
 body {
-	font-family: "nimbus-sans",sans-serif;
+	font-family: "nimbus-sans", sans-serif;
   	font-size: 1em;
   	line-height: 1.625em;
   
@@ -36,42 +36,48 @@ header {
  
 }
 
-article {
-	
+
+.artistContainer h1 {
+	font-family: "abril-fatface",serif;
+  	font-size: 4.2em;
+  	line-height: 1.3em;
+   	margin-top: 0.59090909em;
+  	margin-bottom: 0.59090909em;
+  	color:#fff;
+
 }
-
-
-
-footer {
+@media only screen and (max-width: 1200px) {
+	.artistContainer h1 {
 	
-}
+  	font-size: 3.2em;
+  	
 
-/*	Typography VIA http://www.gridlover.net/app/  (MAJOR SIXTH) */
+}
+                   
+        }
 
 h1 {
-  font-family: "abril-fatface",serif;
-  font-size: 3.2em;
-  line-height: 1.3em;
-   margin-top: 0.59090909em;
-  margin-bottom: 0.59090909em;
+  	font-family: "abril-fatface",serif;
+  	font-size: 3.2em;
+  	line-height: 1.3em;
+   	margin-top: 0.59090909em;
+  	margin-bottom: 0.59090909em;
   
 }
 
 h2 {
 	font-family: "abril-fatface",serif;
-  font-size: 2.75em;
-  line-height: 1.181818182em;
-  margin-top: 1.18181818em;
-  margin-bottom: 0.59090909em;
+  	font-size: 2.75em;
+  	line-height: 1.181818182em;
+  	margin-top: 1.18181818em;
+  	margin-bottom: 0.59090909em;
  
 }
 h3 {
-	font-family: "abril-fatface",serif;
-  font-size: 1.6875em;
-  line-height: 1.925925926em;
-  margin-top: 0.96296296em;
-  margin-bottom: 0.96296296em;
-  font-weight:bold
+	font-family: "nimbus-sans", sans-serif;
+  	font-size: 1em;
+  	line-height: 1.625em;
+	margin: 0 auto;
 }
 h4 {
   font-size: 1em;
@@ -79,6 +85,9 @@ h4 {
   margin-top: 1.625em;
   margin-bottom: 1.625em;
  
+}
+.fa-times {
+	font-size:24px !important;
 }
 <!-- ol, pre, table, blockquote {
   margin-top: 1.625em;
@@ -98,10 +107,10 @@ h4 {
 }
 .button:hover {
 	background-color:#539194;
-	
-	
-
 }
+
+
+
 
 /* Sanitation */
 
@@ -143,7 +152,9 @@ li:nth-child(odd) .left {
 li:nth-child(even) .left {
 	background-color:#1B2939
 }
-
+.information h3 {
+	color:#B3E5E8;
+}
 .right {
 	height: 100%;
 	width: 50%;
@@ -164,15 +175,46 @@ li:nth-child(even) .left {
 	min-height: 450px !important;
 	height: 40vh !important;
 	width: 100%;
+	min-width:800px
 	opacity: 1 !important;
-	background-color: #888;
 	display: none;
 	position: absolute;
 	    top: 0;
+	    background-color:#fff;
 }
-.text {
+ .slidingDiv .meta {
+ 	height: 450px;
+	width:40%;
+	min-width 500px;
+	left:0;
+	padding:50px 0 0 75px;
+	position: absolute;
+	overflow:hidden;
+ }
+.slidingDiv .meta h1{
+	font-family: "abril-fatface",serif;
+  	font-size: 2.2em;
+  	line-height: 1.3em;
+  	color:#539194;
+
+}
+.slidingDiv .text {
 	height: 450px;
+	width:60%;
+	right:0;
+	min-width 500px;
+	float:left;
+	padding:75px 75px 0 15px;
+	position: absolute;
+
 }
+
+.hide {
+ position:absolute;
+ right:50px;
+ top:25px
+}
+
 .artistContainer {
 	z-index: 200;
 	width: 100%;
@@ -186,7 +228,7 @@ li:nth-child(even) .left {
 
 /*border:2px solid #fff;*/
 width:100%;
-padding:50px;
+padding:50px 75px;
 position:absolute;
 z-index:150;
 }
@@ -197,15 +239,40 @@ z-index:150;
 	height: 40vh;
 	float: left;
 }
-.text {
+/*.text {
 	width: 300px;
 	float: left;
-}
+}*/
 .show {
-	top:350px;
+	top:325px;
+	left:75px;
 	position: relative;
-	padding:0 50px;
+	padding:0 75px;
+
+	transition: border-color 0.5s ease;
+	padding:5px 40px;
+	color:#fff;
+	display:inline-block;
+
+
+
 }
+a.show {
+	text-decoration:none;
+}
+
+
+li:nth-child(odd) .show{
+	background-color:#1B2939
+}
+li:nth-child(even) .show{
+	background-color:#539194
+
+}
+
+
+
+
 /*MENU*/
 .navigation-strip {
 	width: 175px;
@@ -224,12 +291,12 @@ main {
 	margin-top: 60px;
 	padding-top: 100px;
 }
-.container {
+/*.container {
 	width: 175px;
 	margin: 0 auto;
 	max-width: 600px;
 	text-align: left;
-}
+}*/
 input {
 	display: none;
 }
